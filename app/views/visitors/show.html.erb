@@ -1,0 +1,7 @@
+<h1><%= @visitor.name %>'s Page</h1>
+
+    <% @visitor.animals.each do |animal| %>
+    <%= animal.name  %> the
+    <%= animal.species  %>
+    <% end %>
+<%= button_to "Edit", edit_visitor_path,method: :get %>

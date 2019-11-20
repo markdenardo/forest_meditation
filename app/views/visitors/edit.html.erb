@@ -1,0 +1,8 @@
+<h1><%= @visitor.name %>'s Page</h1>
+
+     <%= form_for @visitor do |f| %>
+      name:<%= f.text_field :name %>
+      <%= f.submit %>
+    <% end %>
+
+  <%= button_to "Delete", visitor_path, method: :delete %>

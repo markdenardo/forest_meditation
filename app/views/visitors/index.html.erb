@@ -1,0 +1,9 @@
+<h1>Visitors Page</h1>
+
+<% @visitors.each do |visitor| %>
+<%= link_to visitor.name, visitor %>
+<br>
+<% end %>
+<br>
+<%= button_to "New Visitor", new_visitor_path(@visitor), method: :get%>
+<%= button_to "New Forest visit", new_forest_path, method: :get %>
