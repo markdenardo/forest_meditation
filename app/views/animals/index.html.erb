@@ -1,6 +1,8 @@
-<h1>All Animals</h1>
+<h1>Animals Page</h1>
 <%@animals.each do|animal| %>
 <%= link_to animal.name, animal %> the
 <%= animal.species %>
 <br>
 <%end %>
+<br>
+  <%= button_to "schedule a visit", new_forest_path(@forest), method: :get%>

@@ -1,7 +1,7 @@
-<h1><%= @visitor.name %>'s Page</h1>
+<h1><%= @visitor.name %>'s Meditation Friends</h1>
 
     <% @visitor.animals.each do |animal| %>
-    <%= animal.name  %> the
-    <%= animal.species  %>
+    <ul><%= animal.name  %> the
+    <%= animal.species  %></ul>
     <% end %>
-<%= button_to "Edit", edit_visitor_path,method: :get %>
+<%= button_to "Edit Visitor Name", edit_visitor_path,method: :get %>

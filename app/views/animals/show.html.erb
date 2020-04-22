@@ -1,8 +1,7 @@
-<h1><%=@animal.name%> the <%=@animal.species%>'s page</h1>
+<h1><%=@animal.name%> the <%=@animal.species%>'s friends</h1>
 
   <% @animal.visitors.each do |visitor| %>
-  <%= visitor.name %>
+  <ul><%= visitor.name %></ul>
   <% end %>
 
-  <%= button_to "go to the forest", new_forest_path(@forest), method: :get%>
-  
+  <%= button_to "schedule a visit", new_forest_path(@forest), method: :get%>

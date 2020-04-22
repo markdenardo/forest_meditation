@@ -1,13 +1,12 @@
-<h1>All your meditation encounters</h1>
+<h1>Meditation Encounters in Forests</h1>
 
-  <% @forests.each do |forest| %>
-  <%=  forest.visitor.name %> meets with
-  <%= forest.animal.name%> who is a
-  <%= forest.animal.species %>
-  in <%= forest.forest %><br>
-
+  <% @forests.each do |f| %>
+  <ul><%=  f.visitor.name %> meditates with
+  <%= f.animal.name%> who is a
+  <%= f.animal.species %>
+  in <%= f.forest_name %><br></ul>
   <% end %>
 <br>
 <%= button_to "New Forest visit", new_forest_path, method: :get %>
-<%= button_to "New Visitor", new_visitor_path, method: :get%>
 <%= button_to "Visitor's Page", visitors_path, method: :get%>
+<%= button_to "Animals's Page", animals_path, method: :get%>
