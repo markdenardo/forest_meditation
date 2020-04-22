@@ -1,7 +1,8 @@
-<h1><%= @visitor.name %>'s Meditation Friends</h1>
+<h1><%= @visitor.name %>'s Friends</h1>
 
     <% @visitor.animals.each do |animal| %>
     <ul><%= animal.name  %> the
     <%= animal.species  %></ul>
     <% end %>
 <%= button_to "Edit Visitor Name", edit_visitor_path,method: :get %>
+<%= button_to "Visitors Index", visitors_path, method: :get%>

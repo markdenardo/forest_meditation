@@ -1,4 +1,4 @@
-<h1>Meditation Encounters in Forests</h1>
+<h1>Meditation Visits in Forests</h1>
 
   <% @forests.each do |f| %>
   <ul><%=  f.visitor.name %> meditates with
@@ -7,6 +7,6 @@
   in <%= f.forest_name %><br></ul>
   <% end %>
 <br>
-<%= button_to "New Forest visit", new_forest_path, method: :get %>
-<%= button_to "Visitor's Page", visitors_path, method: :get%>
-<%= button_to "Animals's Page", animals_path, method: :get%>
+<%= button_to "New Forest Visit", new_forest_path, method: :get %>
+<%= button_to "Visitors Index", visitors_path, method: :get%>
+<%= button_to "Animals Index", animals_path, method: :get%>

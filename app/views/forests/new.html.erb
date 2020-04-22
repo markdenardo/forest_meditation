@@ -1,4 +1,4 @@
-<h1>Create a Forest Encounter</h1>
+<h1>Create a Forest Visit</h1>
 
 <%= form_for @forest do |t| %>
 <%= t.label :visitor_id%>
@@ -6,5 +6,5 @@
 <%= t.label :animal_id%>
 <%= t.collection_select :animal_id, Animal.all, :id, :animal_stuff %>
 <%= t.text_field :forest, :placeholder => 'Create a new forest!'%>
-<%= t.submit text="Meditate"%>
+<%= t.submit text="Create New Visit"%>
 <% end %>
